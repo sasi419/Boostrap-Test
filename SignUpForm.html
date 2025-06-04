@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="SignUpForm_css.css" rel="stylesheet">
+    <link href="assets/bootstrap-5.3.6-d/css/bootstrap.min.css" rel="stylesheet">
+    <script src="SignUpForm_js.js"></script>
+    
+    <title>Sign Up Form</title>
+</head>
+<body>
+    <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h2 class="text-center mb-4">Sign Up</h2>
+                <form id="signupForm" onsubmit="return validateForm()">
+                  <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" id="username" class="form-control">
+                    <div class="text-danger small" id="usernameError"></div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="text" id="email" class="form-control">
+                    <div class="text-danger small" id="emailError"></div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" id="password" class="form-control">
+                    <div class="text-danger small" id="passwordError"></div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="confirmPassword" class="form-label">Confirm Password</label>
+                    <input type="password" id="confirmPassword" class="form-control">
+                    <div class="text-danger small" id="confirmPasswordError"></div>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

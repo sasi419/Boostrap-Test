@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="DynamicTable_css.css" rel="stylesheet">
+    <link href="assets/bootstrap-5.3.6-d/css/bootstrap.min.css" rel="stylesheet">
+    <script src="DynamicTable_js.js"></script>
+    <title>Dynamic Table with JS</title>
+</head>
+<body>
+  <div class="container py-5">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h3 class="card-title mb-4 text-center">Manage Users Table</h3>
+  
+        <div class="row g-2 mb-3">
+          <div class="col-md-5">
+            <input type="text" id="name" class="form-control" placeholder="Enter Name">
+          </div>
+          <div class="col-md-5">
+            <input type="text" id="email" class="form-control" placeholder="Enter Email">
+          </div>
+          <div class="col-md-2 d-grid">
+            <button class="btn btn-primary" onclick="addRow()">Add Row</button>
+          </div>
+        </div>
+  
+        <div class="table-responsive">
+          <table class="table table-bordered table-hover" id="userTable">
+            <thead class="table-dark">
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Dynamic rows go here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
