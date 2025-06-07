@@ -1,0 +1,8 @@
+/* AOS CSS placeholder */
+[data-aos] {
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+[data-aos].aos-animate {
+  opacity: 1;
+}

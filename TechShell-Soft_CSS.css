@@ -1,0 +1,26 @@
+body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .hero {
+      background: linear-gradient(to right, #0e3afd, #5658f0);
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+    }
+    .service-card:hover {
+      transform: scale(1.05);
+      transition: 0.3s;
+    }
+    .footer {
+      background-color: #1f1c2c;
+      color: white;
+      padding: 20px 0;
+    }
+    .team-card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
